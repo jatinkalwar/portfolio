@@ -1,0 +1,76 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Debug project files
+        run: |
+          echo "Listing root directory:"
+          ls -la
+
+      # ✅ Detect correct build folder (build or dist)
+      - name: Detect build output folder
+        id: detect
+        run: |
+          if [ -d "build" ]; then
+            echo "dir=build" >> $GITHUB_OUTPUT
+          elif [ -d "dist" ]; then
+            echo "dir=dist" >> $GITHUB_OUTPUT
+          else
+            echo "❌ No build output found. Build failed."
+            exit 1
+          fi
+
+
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./${{ steps.detect.outputs.dir }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
