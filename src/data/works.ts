@@ -121,15 +121,6 @@ export interface WorkItem {
 
 export const works: WorkItem[] = [
   {
-    id: "1",
-    title: "OYN - Own Your Nutritionist",
-    description: "What the project is: Own Your Nutritionist is a unified wellness and food-tech platform connecting users with certified nutritionists, personalized diet plans, and instant consultation bookings alongside healthy meal ordering from home kitchens.\n\nMy Role & Implementation: Developed the cross-platform mobile application featuring nutritionist discovery, instant and scheduled chat/video consultations, subscription-based nutrition plans, and REST API backend integrations.",
-    image: oyn1,
-    images: [oyn2, oyn3, oyn4, oyn5, oyn6],
-    category: "Mobile App",
-  },  
-
-  {
     id: "2",
     title: "Eye Setu",
     description: "What the project is: Eye Setu is a comprehensive eye care healthcare platform designed to streamline the entire patient journey—from appointment booking and OPD management to telemedicine consultations, diagnosis, and optical product purchases across patients, doctors, optometrists, and administrators.\n\nMy Role & Implementation: Developed multiple Flutter-based healthcare applications for users, doctors, and optometrists. Implemented video consultations using ZegoCloud, real-time booking via WebSockets, REST APIs with Dio/Retrofit, Firebase push notifications, Razorpay payment gateway integration, Google Maps location tracking, and secure data handling with local storage.",
@@ -139,38 +130,11 @@ export const works: WorkItem[] = [
   },
 
   {
-    id: "3",
-    title: "Pulse - Dietitian",
-    description: "What the project is: Pulse is a nutrition consultation ecosystem designed to bridge clients and certified dietitians for booking appointments, tracking health metrics, and receiving customized meal plans.\n\nMy Role & Implementation: Developed client and dietitian mobile interfaces, implementing appointment scheduling workflows, RESTful API data sync, secure payment gateway integrations, and health progress tracking analytics.",
-    image: pulse1,
-    images: [pulse2, pulse3, pulse4, pulse5, pulse6],
-    category: "Mobile App",
-  },
-  
-  {
-    id: "4",
-    title: "42Kicks - Running App",
-    description: "What the project is: 42Kicks is a comprehensive fitness and marathon companion app combining activity tracking, performance analytics, and community-driven running challenges.\n\nMy Role & Implementation: Engineered mobile tracking features with GPS location integration, challenge leaderboards, REST API data synchronization, and user activity dashboard analytics.",
-    image: kick1,
-    images: [kick2, kick3, kick4, kick5, kick6],
-    category: "Mobile App",
-  },
-
-  {
-    id: "5",
-    title: "Sauda - IPO",
-    description: "What the project is: Sauda is an auction and IPO discovery platform enabling users to browse categorized listings, apply advanced filters, and track bidding activity in real time.\n\nMy Role & Implementation: Implemented real-time bidding updates, item filtering logic, REST API integration, and clean responsive UI views for transparent auction monitoring.",
-    image: sauda1,
-    images: [sauda2, sauda3, sauda3, sauda4, sauda5, sauda6],
-    category: "Mobile App",
-  },
-
-  {
-    id: "6",
-    title: "Cub Care",
-    description: "What the project is: Cub Care is a daycare management platform connecting parents, teachers, and administrators to digitize childcare operations and real-time activity tracking.\n\nMy Role & Implementation: Developed mobile application modules for real-time parent-teacher messaging, daily activity updates, attendance management, and REST API integration.",
-    image: cub1,
-    images: [cub2, cub3, cub4, cub5],
+    id: "14",
+    title: "Indian Cancer Society",
+    description: "What the project is: Rise Against Cancer is an official awareness and patient support mobile platform developed for the Indian Cancer Society, providing reliable educational content, prevention resources, and emotional support tools for patients and caregivers.\n\nMy Role & Implementation: Developed the Flutter-based mobile awareness application implementing Provider for state management. Integrated Firebase suite (FCM push notifications, Crashlytics, Analytics), REST API integration with pagination, media streaming capabilities, user authentication, multi-language localization, and background notifications for scalable performance.",
+    image: ics1,
+    images: [ics2, ics3, ics4, ics5, ics6],
     category: "Mobile App",
   },
 
@@ -182,25 +146,7 @@ export const works: WorkItem[] = [
     images: [pro2, pro3, pro4, pro5],
     category: "Mobile App",
   },
-  
-  {
-    id: "8",
-    title: "Homiestays",
-    description: "What the project is: Homiestay is a community-driven accommodation booking platform connecting travelers with local property hosts for unique stays.\n\nMy Role & Implementation: Developed property search and filtering views, booking reservation workflows, host management interfaces, and REST API backend integrations.",
-    image: homie1,
-    images: [homie2, homie3, homie4, homie5, homie6],
-    category: "Mobile App",
-  },
 
-  {
-    id: "9",
-    title: "Galleria VSB",
-    description: "What the project is: Galleria VSB is a curated digital gallery and auction showcase platform providing categorized listings and live event tracking.\n\nMy Role & Implementation: Built interactive listing views, filter systems, media gallery handling, and RESTful API data binding.",
-    image: vsb1,
-    images: [vsb2, vsb3, vsb4, vsb5],
-    category: "Mobile App",
-  },
-  
   {
     id: "10",
     title: "BKD - Baniya Ki Dukaan",
@@ -211,11 +157,20 @@ export const works: WorkItem[] = [
   },
 
   {
-    id: "11",
-    title: "4 Way",
-    description: "What the project is: 4Way is a social fitness networking app that connects people through shared athletic interests and map-based event discovery.\n\nMy Role & Implementation: Implemented interactive map-based event discovery, user profile networking, REST API integration, and location services.",
-    image: way1,
-    images: [way2, way3, way4, way5, way6],
+    id: "1",
+    title: "OYN - Own Your Nutritionist",
+    description: "What the project is: Own Your Nutritionist is a unified wellness and food-tech platform connecting users with certified nutritionists, personalized diet plans, and instant consultation bookings alongside healthy meal ordering from home kitchens.\n\nMy Role & Implementation: Developed the cross-platform mobile application featuring nutritionist discovery, instant and scheduled chat/video consultations, subscription-based nutrition plans, and REST API backend integrations.",
+    image: oyn1,
+    images: [oyn2, oyn3, oyn4, oyn5, oyn6],
+    category: "Mobile App",
+  },  
+
+  {
+    id: "4",
+    title: "42Kicks - Running App",
+    description: "What the project is: 42Kicks is a comprehensive fitness and marathon companion app combining activity tracking, performance analytics, and community-driven running challenges.\n\nMy Role & Implementation: Engineered mobile tracking features with GPS location integration, challenge leaderboards, REST API data synchronization, and user activity dashboard analytics.",
+    image: kick1,
+    images: [kick2, kick3, kick4, kick5, kick6],
     category: "Mobile App",
   },
 
@@ -229,6 +184,51 @@ export const works: WorkItem[] = [
   },
 
   {
+    id: "3",
+    title: "Pulse - Dietitian",
+    description: "What the project is: Pulse is a nutrition consultation ecosystem designed to bridge clients and certified dietitians for booking appointments, tracking health metrics, and receiving customized meal plans.\n\nMy Role & Implementation: Developed client and dietitian mobile interfaces, implementing appointment scheduling workflows, RESTful API data sync, secure payment gateway integrations, and health progress tracking analytics.",
+    image: pulse1,
+    images: [pulse2, pulse3, pulse4, pulse5, pulse6],
+    category: "Mobile App",
+  },
+
+  {
+    id: "8",
+    title: "Homiestays",
+    description: "What the project is: Homiestay is a community-driven accommodation booking platform connecting travelers with local property hosts for unique stays.\n\nMy Role & Implementation: Developed property search and filtering views, booking reservation workflows, host management interfaces, and REST API backend integrations.",
+    image: homie1,
+    images: [homie2, homie3, homie4, homie5, homie6],
+    category: "Mobile App",
+  },
+
+  {
+    id: "5",
+    title: "Sauda - IPO",
+    description: "What the project is: Sauda is an auction and IPO discovery platform enabling users to browse categorized listings, apply advanced filters, and track bidding activity in real time.\n\nMy Role & Implementation: Implemented real-time bidding updates, item filtering logic, REST API integration, and clean responsive UI views for transparent auction monitoring.",
+    image: sauda1,
+    images: [sauda2, sauda3, sauda3, sauda4, sauda5, sauda6],
+    category: "Mobile App",
+  },
+
+  {
+    id: "11",
+    title: "4 Way",
+    description: "What the project is: 4Way is a social fitness networking app that connects people through shared athletic interests and map-based event discovery.\n\nMy Role & Implementation: Implemented interactive map-based event discovery, user profile networking, REST API integration, and location services.",
+    image: way1,
+    images: [way2, way3, way4, way5, way6],
+    category: "Mobile App",
+  },
+
+  {
+    id: "6",
+    title: "Cub Care",
+    description: "What the project is: Cub Care is a daycare management platform connecting parents, teachers, and administrators to digitize childcare operations and real-time activity tracking.\n\nMy Role & Implementation: Developed mobile application modules for real-time parent-teacher messaging, daily activity updates, attendance management, and REST API integration.",
+    image: cub1,
+    images: [cub2, cub3, cub4, cub5],
+    category: "Mobile App",
+  },
+
+  {
     id: "13",
     title: "Sanesa",
     description: "What the project is: Sanesa is a farm-to-home organic grocery ordering platform delivering chemical-free fresh produce directly to consumers.\n\nMy Role & Implementation: Developed product catalog browsing, cart management using local storage, order checkout workflows, and REST API integration.",
@@ -238,12 +238,11 @@ export const works: WorkItem[] = [
   },
 
   {
-    id: "14",
-    title: "Indian Cancer Society",
-    description: "What the project is: Rise Against Cancer is an official awareness and patient support mobile platform developed for the Indian Cancer Society, providing reliable educational content, prevention resources, and emotional support tools for patients and caregivers.\n\nMy Role & Implementation: Developed the Flutter-based mobile awareness application implementing Provider for state management. Integrated Firebase suite (FCM push notifications, Crashlytics, Analytics), REST API integration with pagination, media streaming capabilities, user authentication, multi-language localization, and background notifications for scalable performance.",
-    image: ics1,
-    images: [ics2, ics3, ics4, ics5, ics6],
+    id: "9",
+    title: "Galleria VSB",
+    description: "What the project is: Galleria VSB is a curated digital gallery and auction showcase platform providing categorized listings and live event tracking.\n\nMy Role & Implementation: Built interactive listing views, filter systems, media gallery handling, and RESTful API data binding.",
+    image: vsb1,
+    images: [vsb2, vsb3, vsb4, vsb5],
     category: "Mobile App",
   },
-
 ];

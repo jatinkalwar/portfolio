@@ -2,17 +2,28 @@ import { useState, useMemo } from "react";
 import MasonryGrid from "@/components/MasonryGrid";
 import { works } from "@/data/works";
 
+const shuffleArray = <T,>(array: T[]): T[] => {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
 const Works = () => {
+  const shuffledWorks = useMemo(() => shuffleArray(works), []);
+
   const categories = useMemo(() => {
-    const cats = Array.from(new Set(works.map((w) => w.category)));
+    const cats = Array.from(new Set(shuffledWorks.map((w) => w.category)));
     return ["All", ...cats];
-  }, []);
+  }, [shuffledWorks]);
 
   const [active, setActive] = useState("Website");
 
   const filtered = useMemo(
-    () => (active === "All" ? works : works.filter((w) => w.category === active)),
-    [active]
+    () => (active === "All" ? shuffledWorks : shuffledWorks.filter((w) => w.category === active)),
+    [active, shuffledWorks]
   );
 
   return (
