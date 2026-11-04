@@ -33,8 +33,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/redirecttoWeddingVenue" element={<RedirectToMaps />} />
+          <Route path="/public/redirecttoWeddingVenue" element={<RedirectToMaps />} />
           <Route path="/redirec/iuugyfufguiuy" element={<RedirectToMaps />} />
           <Route path="/redirect/iuugyfufguiuy" element={<RedirectToMaps />} />
+          <Route path="/public/redirec/iuugyfufguiuy" element={<RedirectToMaps />} />
+          <Route path="/public/redirect/iuugyfufguiuy" element={<RedirectToMaps />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
