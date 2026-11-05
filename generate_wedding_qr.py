@@ -6,7 +6,7 @@ from qrcode.image.styles.moduledrawers import RoundedModuleDrawer
 from qrcode.image.styles.colormasks import SolidFillColorMask
 from PIL import Image, ImageDraw, ImageFont
 
-TARGET_URL = "https://jatinkalwar.in/redirecttoWeddingVenue"
+TARGET_URL = "https://jatinkalwar.in/public/redirecttoWeddingVenue"
 
 def create_wedding_rings_badge(size=150):
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
@@ -212,7 +212,7 @@ def generate_invitation_card(qr_img, output_path):
     
     draw_divider(inst_y + 90)
     
-    draw.text((card_w // 2, inst_y + 130), "jatinkalwar.in/redirecttoWeddingVenue", fill=gold_main, font=font_url, anchor="mm")
+    draw.text((card_w // 2, inst_y + 130), "jatinkalwar.in/public/redirecttoWeddingVenue", fill=gold_main, font=font_url, anchor="mm")
     
     draw.text((card_w // 2, card_h - 110), "We look forward to celebrating with you!", fill=gold_main, font=font_footer, anchor="mm")
     
